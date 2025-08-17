@@ -1,0 +1,407 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --animate-fade-in: fadeInWhite 0.8s ease-out forwards;
+
+  @keyframes fadeInWhite {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eae3d9;
+  background-image: url("/bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  image-rendering: auto;
+}
+
+img {
+  @apply animate-fade-in;
+}
+
+.promo-code {
+  padding: 1.2rem;
+}
+
+.nav-L {
+  padding: 1rem;
+}
+
+.nav-L button img {
+  width: 2.3rem;
+  user-select: none;
+}
+
+.nav-M button img {
+  width: 3rem;
+  user-select: none;
+}
+
+.nav-R button {
+  padding: 1rem;
+}
+
+.nav-R button img {
+  width: 1.4rem;
+  user-select: none;
+  outline: 0;
+}
+
+.drop-menu {
+  font-size: 1rem;
+  padding: 2rem;
+  margin-top: 4.75rem;
+  gap: 1.5rem;
+  width: 100%;
+  letter-spacing: 2px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.drop-menu-selection {
+  padding: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(169, 49, 49);
+    letter-spacing: 4px;
+    transition: 0.3s ease-in-out;
+  }
+}
+.welcome-text {
+  letter-spacing: 5px;
+  margin: 1.5rem;
+  margin-top: 0;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  right: 30%;
+  user-select: none;
+}
+
+.welcome-text h1 {
+  transition: 0.3s ease-in-out;
+}
+
+.welcome-text button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 80px;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+  padding: 0.2rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    transition: 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.menu-container {
+  margin-top: 4.5rem;
+}
+
+.menu-container,
+.location-container {
+  padding: 1vw;
+}
+
+.menus {
+  margin: 1vw;
+  /* margin-top: 8vw; */
+  padding: 6vw 1vw 6vw 1vw;
+}
+
+.menus img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+  transition: 0.2s ease;
+
+  &:hover {
+    border-radius: 1rem;
+    transform: scale(1.1);
+  }
+}
+
+.preview-container {
+  margin-top: 10vw;
+  padding: 1vw;
+}
+
+.preview h1 {
+  margin-top: 10vw;
+}
+
+.preview h1 hr {
+  margin-bottom: 10px;
+}
+
+.split {
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.about-us-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.left-about img,
+.right-about {
+  margin: 2vw;
+}
+
+.preview-desc,
+.about-us-desc {
+  padding-left: 1rem;
+}
+
+.preview-container p {
+  padding-left: 1rem;
+  width: 90%;
+  line-height: 1.8rem;
+}
+
+.price {
+  margin-top: 1rem;
+}
+
+.location-container {
+  padding-top: 16vw;
+}
+
+.contact-container {
+  margin: 6vw auto 9vw auto;
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 1500px;
+}
+
+.out {
+  padding: 2vw;
+}
+
+.left-contact {
+  background-color: #fcd34d;
+  aspect-ratio: 1/1.5;
+}
+
+.right-contact {
+  aspect-ratio: 1/1.5;
+}
+
+.envelope-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 45%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+input,
+textarea {
+  padding: 6px;
+  padding-left: 14px;
+  width: 55%;
+  outline: 0;
+  background: rgb(233, 233, 233);
+  border-radius: 1rem;
+}
+
+.right-contact button {
+  padding: 8px;
+  width: 9rem;
+  outline: 0;
+  background-color: rgb(247, 176, 121);
+  border-radius: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(223, 158, 109);
+  }
+
+  &:active {
+    background-color: rgb(195, 138, 95);
+  }
+}
+
+footer {
+  padding-bottom: 0.2rem;
+}
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  .menus {
+    flex-direction: column;
+    gap: 10%;
+  }
+
+  .welcome-text {
+    right: 0;
+    left: 0;
+    line-height: 8vw;
+  }
+
+  .welcome-text h2 {
+    font-size: 6.7vw;
+  }
+
+  .welcome-text h1 {
+    font-size: 10vw;
+  }
+
+  .welcome-text button {
+    padding: 10px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    width: 8rem;
+    height: 4rem;
+  }
+
+  .preview-container h1 {
+    font-size: 1.7rem;
+  }
+
+  .preview-desc,
+  .about-us-desc,
+  .location-title {
+    font-size: 0.9rem;
+  }
+
+  .about-us-desc {
+    padding-left: 0;
+  }
+
+  .location iframe {
+    width: 80%;
+    height: 80vw;
+  }
+
+  input,
+  textarea {
+    width: 75%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome-text button {
+    padding: 8px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+    width: 7rem;
+    height: 3.5rem;
+  }
+
+  .preview-container h1,
+  .about-us-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .preview,
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .preview img,
+  .shop-img,
+  .left,
+  .right,
+  .right-about,
+  .left-about {
+    width: 90vw;
+  }
+
+  .shop-img {
+    margin-bottom: 1rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-container h2 {
+    font-size: 1.2rem;
+    border: 0;
+  }
+
+  .left-contact {
+    aspect-ratio: 1/1;
+  }
+
+  .right-contact {
+    padding: 10px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  .right-contact button {
+    width: 100%;
+  }
+}
